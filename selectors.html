@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery course</title>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<style>
+		body{
+			font-size: 17px;
+			font-family: #f4f4f4;
+			line-height: 1.5em;
+		}
+		
+		header{
+			background: #333;
+			color: #fff;
+			padding: 20px;
+			border-bottom: 4px #000 solid;
+			margin-bottom: 10px;
+			text-align:center;
+		}
+		#container{
+			width: 90%;
+			margin: auto;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Jquery Crash Course | Selectors</h1>
+	</header>
+	<div id="container">
+		<h1 id="heading1">Heading One</h1>
+		<p id="para1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptas, officiis, aliquam <span>Lorem ipsum dolor sit amet.</span>ea placeat ipsa perferendis voluptatem itaque accusantium nostrum repudiandae possimus culpa commodi! Repellendus, provident voluptatum distinctio harum quo.
+		</p>
+		
+		<h1 class="heading2">Heading One</h1>
+		<p class="para2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptas, officiis, aliquam ea placeat ipsa perferendis voluptatem itaque accusantium nostrum repudiandae possimus <span>Lorem ipsum dolor sit amet.</span>culpa commodi! Repellendus, provident voluptatum distinctio harum quo.
+		</p>
+		
+		<ul id="list">
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ul>
+		
+		<input type="button" value="Button 1">
+		<input type="submit" value="Submit">
+		<input type="text">
+		
+		<a href="http://google.com">Google</a>
+		<a href="http://yahoo.com">Yahoo</a>
+	</div>
+	
+	<script>
+		// $('h1').hide();
+		// $('h1#heading1').hide();
+		// $('.heading2').hide();
+		// $('p span').css('color', 'red');
+		$('ul#list li:first').css('color', 'red');
+		$('ul#list li:last').css('color', 'green');
+		$('ul#list li:even').css('background', 'yellow');
+		$('ul#list li:odd').css('background', '#cccccc');
+		$('ul#list li:nth-child(3n)').css('list-style', 'none');
+		$(':text').hide();
+		$('[href]').css('color', 'red');
+		$('a[href="http://yahoo.com"]').css('color', 'green');
+		// $('*').hide();
+	</script>
+</body>
+</html>

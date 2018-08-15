@@ -1,0 +1,27 @@
+[
+	{
+		"firstName":"John",
+		"lastName":"Doe",
+		"email":"jdoe@gmail.com"
+	},
+	{
+		"firstName":"Rakib",
+		"lastName":"Hasan",
+		"email":"rakib@gmail.com"
+	},
+	{
+		"firstName":"Jewel",
+		"lastName":"Khan",
+		"email":"jewel@gmail.com"
+	},
+	{
+		"firstName":"Nizam",
+		"lastName":"Uddin",
+		"email":"nizam@gmail.com"
+	},
+	{
+		"firstName":"Kamrul",
+		"lastName":"Hassan",
+		"email":"kamrul@gmail.com"
+	}
+]
